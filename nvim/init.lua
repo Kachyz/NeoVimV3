@@ -1,6 +1,7 @@
-require "kachyz.options"
-require "kachyz.keymaps"
-require "kachyz.plugins"
-require "kachyz.colorscheme"
-require "kachyz.cmp"
-
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.cmp"
+require "user.lsp"
+require "user.treesitter"

@@ -34,7 +34,7 @@ keymap("n", "˙", ":vertical resize -2<CR>", opts)
 keymap("n", "¬", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-Tab>", ":bnext<CR>", opts)
+keymap("n", "<Tab>", ":bnext<CR>", opts)
 keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
 keymap("n", "<leader>qq", ":bp\\|bd #<CR>", opts)
 
