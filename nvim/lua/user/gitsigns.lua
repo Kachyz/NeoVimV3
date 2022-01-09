@@ -7,8 +7,8 @@ gitsigns.setup {
   signs = {
     add = { hl = "GitSignsAdd", text = "▎", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
     change = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
-    delete = { hl = "GitSignsDelete", text = "契", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-    topdelete = { hl = "GitSignsDelete", text = "契", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+    delete = { hl = "GitSignsDelete", text = "_", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+    topdelete = { hl = "GitSignsDelete", text = "‾", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
     changedelete = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
   },
   signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
@@ -44,6 +44,14 @@ gitsigns.setup {
   },
   yadm = {
     enable = false,
+  },
+  keymaps = {
+    noremap = true,
+    ['n <leader>hs'] = '<cmd>Gitsigns stage_hunk<CR>',
+    ['n <leader>hu'] = '<cmd>Gitsigns undo_stage_hunk<CR>',
+    ['n <leader>hj'] = '<cmd>Gitsigns next_hunk<CR>',
+    ['n <leader>hk'] = '<cmd>Gitsigns prev_hunk<CR>',
+    ['n <leader>hb'] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',
   },
 }
 
