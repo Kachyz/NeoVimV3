@@ -52,8 +52,9 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow" -- rainbow bracket pairs
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-  -- Bufferline
+  -- Bufferline & Lualine
   use "akinsho/bufferline.nvim"
+  use "nvim-lualine/lualine.nvim"
 
   -- THEMES --
   use 'folke/tokyonight.nvim'

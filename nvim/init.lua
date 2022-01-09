@@ -12,6 +12,7 @@ require "user.gitsigns"
 require "user.colorizer"
 require "user.nvim-tree"
 require "user.bufferline"
+require "user.lualine"
 
 -- Themes
 require "user.themes.nightfox"
