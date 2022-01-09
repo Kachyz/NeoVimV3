@@ -49,9 +49,12 @@ gitsigns.setup {
     noremap = true,
     ['n <leader>hs'] = '<cmd>Gitsigns stage_hunk<CR>',
     ['n <leader>hu'] = '<cmd>Gitsigns undo_stage_hunk<CR>',
-    ['n <leader>hj'] = '<cmd>Gitsigns next_hunk<CR>',
-    ['n <leader>hk'] = '<cmd>Gitsigns prev_hunk<CR>',
-    ['n <leader>hb'] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',
+    ['n <leader>hr'] = '<cmd>Gitsigns reset_hunk<CR>',
+
+    ['n <leader>gj'] = '<cmd>Gitsigns next_hunk<CR>',
+    ['n <leader>gk'] = '<cmd>Gitsigns prev_hunk<CR>',
+    ['n <leader>ga'] = '<cmd>Gitsigns stage_buffer<CR>',
+    ['n <leader>gb'] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',
   },
 }
 
