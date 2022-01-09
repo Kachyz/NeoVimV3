@@ -10,6 +10,7 @@ require "user.autopairs"
 require "user.comment"
 require "user.gitsigns"
 require "user.colorizer"
+require "user.nvim-tree"
 
 -- Themes
 require "user.themes.nightfox"
