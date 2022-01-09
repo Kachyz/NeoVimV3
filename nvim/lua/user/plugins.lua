@@ -81,6 +81,11 @@ return packer.startup(function(use)
   -- Comments
   use "numToStr/Comment.nvim" -- Easily comment stuff
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+
+  -- Colors
+  use 'norcalli/nvim-colorizer.lua'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

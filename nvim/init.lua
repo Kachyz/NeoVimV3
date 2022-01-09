@@ -8,3 +8,8 @@ require "user.treesitter"
 require "user.telescope"
 require "user.autopairs"
 require "user.comment"
+require "user.gitsigns"
+require "user.colorizer"
+
+-- Themes
+require "user.themes.nightfox"
