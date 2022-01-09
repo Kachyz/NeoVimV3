@@ -84,3 +84,19 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Telescope --
+-- Find a file by name
+keymap("n", "<leader>p", ":Telescope find_files<cr>", opts)
+-- ripgrep - find text inside files
+keymap("n", "<leader>gp", ":Telescope live_grep<cr>", opts)
+-- List open buffers
+keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
+-- git log
+keymap("n", "<leader>gl", ":Telescope git_commits<cr>", opts)
+-- git status
+keymap("n", "<leader>gg", ":Telescope git_status<cr>", opts)
+-- search word under cursos
+keymap("n", "<leader>ksw", ":Telescope grep_string<cr>", opts)
+-- test colorschemes
+keymap("n", "<leader>kcolo", ":lua require('telescope.builtin.internal').colorscheme({enable_preview = true}) theme=get_cursor<cr>", opts)
+
