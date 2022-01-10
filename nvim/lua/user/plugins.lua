@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "kyazdani42/nvim-tree.lua" -- file explorer
   use "kyazdani42/nvim-web-devicons" -- dev icons <3
+  use 'ryanoasis/vim-devicons'
 
   -- Treesitter stuff
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- Treesitter for better syntax handle
@@ -91,7 +92,16 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   -- Colors
-  use 'norcalli/nvim-colorizer.lua'
+  use "norcalli/nvim-colorizer.lua"
+
+  -- Sessions
+  use "ahmedkhalf/project.nvim"
+
+  -- Vertical lines
+  use "lukas-reineke/indent-blankline.nvim"
+
+  -- Welcome screen * check a lua option
+  use "mhinz/vim-startify"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

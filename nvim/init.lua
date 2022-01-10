@@ -13,6 +13,11 @@ require "user.colorizer"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.lualine"
+require "user.project"
+require "user.indentline"
+
+-- Vim scripts
+vim.cmd('source $HOME/.config/nvim/vim/start-screen.vim')
 
 -- Themes
 require "user.themes.nightfox"
