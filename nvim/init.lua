@@ -13,7 +13,7 @@ require "user.colorizer"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.lualine"
-require "user.project"
+-- require "user.project"
 require "user.indentline"
 
 -- Vim scripts
