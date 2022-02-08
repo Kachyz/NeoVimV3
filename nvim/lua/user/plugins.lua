@@ -100,8 +100,15 @@ return packer.startup(function(use)
   -- Vertical lines
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- VIM packages, need to find a Lua option 
   -- Welcome screen * check a lua option
   use "mhinz/vim-startify"
+
+  -- Surround
+  use "tpope/vim-surround"
+
+  -- <3 Emmet
+  use "mattn/emmet-vim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
