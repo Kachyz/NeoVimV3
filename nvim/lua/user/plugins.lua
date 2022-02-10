@@ -78,8 +78,9 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "jose-elias-alvarez/null-ls.nvim"
 
-    -- Telescope
+  -- Telescope
   use "nvim-telescope/telescope.nvim"
 
   -- Autopair
@@ -99,6 +100,9 @@ return packer.startup(function(use)
 
   -- Vertical lines
   use "lukas-reineke/indent-blankline.nvim"
+
+  -- Prettier
+  use {"prettier/vim-prettier", run = "yarn install --frozen-lockfile --production", branch = "release/0.x" }
 
   -- VIM packages, need to find a Lua option 
   -- Welcome screen * check a lua option
