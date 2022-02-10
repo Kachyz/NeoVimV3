@@ -1,5 +1,6 @@
 require "user.options"
 require "user.keymaps"
+require "user.keymapsCoding"
 require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
@@ -15,6 +16,7 @@ require "user.bufferline"
 require "user.lualine"
 -- require "user.project"
 require "user.indentline"
+require "user.snippets"
 
 -- Vim scripts
 vim.cmd('source $HOME/.config/nvim/vim/start-screen.vim')
