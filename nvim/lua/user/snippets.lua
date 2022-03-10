@@ -12,7 +12,7 @@ ls.snippets = {
   javascript = {
     -- Another way to do it
     -- ls.parser.parse_snippet("klg", "console.log('kz -> $1', $1)")
-    s("klg", fmt("console.log('kz -> {}', {})", { i(1, "varName"), rep(1)}))
+    s("klg", fmt("console.log('kz -> {}', {});", { i(1, "varName"), rep(1)}))
   }
 }
 

@@ -17,6 +17,7 @@ nightfox.setup({
     GitSignsAdd = { fg = "#8EDF39" },
     GitSignsChange = { fg = "#F836B3" },
     GitSignsDelete = { fg = "#D80B06" },
+    LineNr = { fg = "#b8a1e3" }
   }
 })
 
