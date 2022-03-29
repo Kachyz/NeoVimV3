@@ -15,5 +15,8 @@ keymap("n", "<leader>ki", "ciw${ <ESC>pa }", opts)
 keymap("v", "<leader>ki", "c${ <ESC>pa }", opts)
 
 -- Print variable value
-keymap("n", "<leader>ll", "yiwoconsole.log('kz', <ESC>pa);<ESC>k", opts)
+keymap("n", "<leader>ll", "yiwoconsole.log('kz -> <ESC>pa', <ESC>pa);<ESC>k", opts)
+
+-- Place a comment above line
+keymap("n", "<leader>kn", "O<ESC>:// KACHYZ - ", opts)
 
