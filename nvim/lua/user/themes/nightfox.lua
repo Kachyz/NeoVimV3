@@ -14,12 +14,17 @@ nightfox.setup({
       match_paren = true, -- inverse the highlighting of match_parens
     },
   },
-  pallets = { },
+  pallets = {
+    nightfox = {
+      sel0= "#404C50",
+    }
+  },
   groups = {
     GitSignsAdd = { fg = "#8EDF39" },
     GitSignsChange = { fg = "#F836B3" },
     GitSignsDelete = { fg = "#D80B06" },
-    LineNr = { fg = "#b8a1e3" }
+    LineNr = { fg = "#b8a1e3" },
+    CursorLine = { bg = "#404C50" },
   }
 })
 
