@@ -50,6 +50,7 @@ gitsigns.setup {
     ['n <leader>hs'] = '<cmd>Gitsigns stage_hunk<CR>',
     ['n <leader>hu'] = '<cmd>Gitsigns undo_stage_hunk<CR>',
     ['n <leader>hr'] = '<cmd>Gitsigns reset_hunk<CR>',
+    ['n <leader>hd'] = '<cmd>Gitsigns preview_hunk<CR>',
 
     ['n <leader>gj'] = '<cmd>Gitsigns next_hunk<CR>',
     ['n <leader>gk'] = '<cmd>Gitsigns prev_hunk<CR>',

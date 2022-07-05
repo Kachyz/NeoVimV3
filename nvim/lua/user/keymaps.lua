@@ -95,6 +95,8 @@ keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
 keymap("n", "<leader>gl", ":Telescope git_commits<cr>", opts)
 -- git status
 keymap("n", "<leader>gg", ":Telescope git_status<cr>", opts)
+-- git blame current file
+keymap("n", "<leader>gf", ":Telescope git_bcommits<cr>", opts)
 -- search word under cursos
 keymap("n", "<leader>ksw", ":Telescope grep_string<cr>", opts)
 -- test colorschemes
