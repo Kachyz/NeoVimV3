@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {
-    "html", "javascript", "lua", "typescript", "tsx", "css", "json"
+    "html", "javascript", "lua", "typescript", "tsx", "css", "json", "http"
   }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   highlight = {
     enable = true,
