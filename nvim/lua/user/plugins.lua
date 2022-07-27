@@ -117,6 +117,12 @@ return packer.startup(function(use)
   -- Rest client
   use { "NTBBloodbath/rest.nvim", requires = { "nvim-lua/plenary.nvim" } }
 
+  -- Debugger
+  use {'mfussenegger/nvim-dap'}
+  use {'nvim-telescope/telescope-dap.nvim'}
+  use {'rcarriga/nvim-dap-ui'}
+  use {'theHamsta/nvim-dap-virtual-text'}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

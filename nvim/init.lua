@@ -18,6 +18,7 @@ require "user.lualine"
 require "user.indentline"
 require "user.snippets"
 require "user.rest"
+require "user.dap"
 
 -- Vim scripts
 vim.cmd('source $HOME/.config/nvim/vim/start-screen.vim')
