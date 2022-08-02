@@ -100,5 +100,5 @@ keymap("n", "<leader>gf", ":Telescope git_bcommits<cr>", opts)
 -- search word under cursos
 keymap("n", "<leader>ksw", ":Telescope grep_string<cr>", opts)
 -- test colorschemes
-keymap("n", "<leader>kcolo", ":lua require('telescope.builtin.internal').colorscheme({enable_preview = true}) theme=get_cursor<cr>", opts)
+keymap("n", "<leader>kcolo", ":lua require('telescope.builtin').colorscheme({enable_preview = true}) theme=get_cursor<cr>", opts)
 
