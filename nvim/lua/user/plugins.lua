@@ -61,6 +61,8 @@ return packer.startup(function(use)
   use "Julpikar/night-owl.nvim"  -- night-owl theme
   use 'EdenEast/nightfox.nvim'
   use 'franbach/miramare'
+  use 'Mofiqul/dracula.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- CMP plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

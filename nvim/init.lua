@@ -27,3 +27,4 @@ vim.cmd('source $HOME/.config/nvim/vim/emmet.vim')
 
 -- Themes
 require "user.themes.nightfox"
+require "user.themes.catpuccin"
