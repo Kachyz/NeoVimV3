@@ -106,7 +106,7 @@ return packer.startup(function(use)
   -- Prettier
   use {"prettier/vim-prettier", run = "yarn install --frozen-lockfile --production", branch = "release/0.x" }
 
-  -- VIM packages, need to find a Lua option 
+  -- VIM packages, need to find a Lua option
   -- Welcome screen * check a lua option
   use "mhinz/vim-startify"
 
@@ -118,6 +118,9 @@ return packer.startup(function(use)
 
   -- Rest client
   use { "NTBBloodbath/rest.nvim", requires = { "nvim-lua/plenary.nvim" } }
+
+  -- Diff view
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- Debugger
   use {'mfussenegger/nvim-dap'}
