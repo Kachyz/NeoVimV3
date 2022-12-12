@@ -102,3 +102,10 @@ keymap("n", "<leader>ksw", ":Telescope grep_string<cr>", opts)
 -- test colorschemes
 keymap("n", "<leader>kcolo", ":lua require('telescope.builtin').colorscheme({enable_preview = true}) theme=get_cursor<cr>", opts)
 
+-- DiffView
+
+keymap("n", "<leader>vf", ":DiffviewFileHistory %<cr>", opts)
+keymap("n", "<leader>va", ":DiffviewFileHistory<cr>", opts)
+keymap("n", "<leader>vo", ":DiffviewOpen<cr>", opts)
+keymap("n", "<leader>vc", ":DiffviewClose<cr>", opts)
+keymap("n", "<leader>ve", ":DiffviewToggleFiles<cr>", opts)
