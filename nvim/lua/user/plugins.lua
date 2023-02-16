@@ -64,23 +64,33 @@ return packer.startup(function(use)
   use 'Mofiqul/dracula.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
 
-  -- CMP plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
 
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v1.x',
+	  requires = {
+		  -- LSP Support
+		  {'neovim/nvim-lspconfig'},
+		  {'williamboman/mason.nvim'},
+		  {'williamboman/mason-lspconfig.nvim'},
 
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+		  -- Autocompletion
+		  {'hrsh7th/nvim-cmp'},
+		  {'hrsh7th/cmp-buffer'},
+		  {'hrsh7th/cmp-path'},
+		  {'saadparwaiz1/cmp_luasnip'},
+		  {'hrsh7th/cmp-nvim-lsp'},
+		  {'hrsh7th/cmp-nvim-lua'},
+
+		  -- Snippets
+		  {'L3MON4D3/LuaSnip'},
+		  {'rafamadriz/friendly-snippets'},
+	  }
+  }
+
   use "jose-elias-alvarez/null-ls.nvim"
+  use "mhartington/formatter.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -104,7 +114,7 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
 
   -- Prettier
-  use {"prettier/vim-prettier", run = "yarn install --frozen-lockfile --production", branch = "release/0.x" }
+  use {"prettier/vim-prettier", run = "yarn install --frozen-lockfile --production"}
 
   -- VIM packages, need to find a Lua option
   -- Welcome screen * check a lua option
