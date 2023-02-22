@@ -1,7 +1,12 @@
 ### Install LSP languages
 
+-- deprecated
 ```
-:LspInstallInfo
+:LspInstallInfo 
+```
+Use this one
+```
+:Mason
 ```
 
 Look for the one you need and install it with `i` key
