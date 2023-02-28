@@ -132,6 +132,9 @@ return packer.startup(function(use)
   -- Diff view
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
+  -- Definitions
+  use { "dnlhc/glance.nvim" }
+
   -- Debugger
   use {'mfussenegger/nvim-dap'}
   use {'nvim-telescope/telescope-dap.nvim'}
@@ -144,4 +147,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-

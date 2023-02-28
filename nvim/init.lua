@@ -21,6 +21,7 @@ require "user.rest"
 require "user.dap"
 require "user.formatter"
 require "user.diffview"
+require "user.glance"
 
 -- Vim scripts
 vim.cmd('source $HOME/.config/nvim/vim/start-screen.vim')

@@ -102,6 +102,11 @@ keymap("n", "<leader>ksw", ":Telescope grep_string<cr>", opts)
 -- test colorschemes
 keymap("n", "<leader>kcolo", ":lua require('telescope.builtin').colorscheme({enable_preview = true}) theme=get_cursor<cr>", opts)
 
+-- Glance
+
+vim.keymap.set('n', 'gD', '<CMD>Glance definitions<CR>')
+vim.keymap.set('n', 'gr', '<CMD>Glance references<CR>')
+
 -- DiffView
 
 keymap("n", "<leader>vf", ":DiffviewFileHistory %<cr>", opts)
