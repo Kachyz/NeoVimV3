@@ -25,8 +25,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
 -- Resize with arrows
 keymap("n", "˚", ":resize +2<CR>", opts)
 keymap("n", "∆", ":resize -2<CR>", opts)
@@ -85,30 +83,10 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope --
--- Find a file by name
-keymap("n", "<leader>p", ":Telescope find_files<cr>", opts)
--- ripgrep - find text inside files
-keymap("n", "<leader>gp", ":Telescope live_grep<cr>", opts)
--- List open buffers
-keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
--- git log
-keymap("n", "<leader>gl", ":Telescope git_commits<cr>", opts)
--- git status
-keymap("n", "<leader>gg", ":Telescope git_status<cr>", opts)
--- git blame current file
-keymap("n", "<leader>gf", ":Telescope git_bcommits<cr>", opts)
--- search word under cursos
-keymap("n", "<leader>ksw", ":Telescope grep_string<cr>", opts)
 -- test colorschemes
 keymap("n", "<leader>kcolo", ":lua require('telescope.builtin').colorscheme({enable_preview = true}) theme=get_cursor<cr>", opts)
 
--- Glance
-
-vim.keymap.set('n', 'gD', '<CMD>Glance definitions<CR>')
-vim.keymap.set('n', 'gr', '<CMD>Glance references<CR>')
-
 -- DiffView
-
 keymap("n", "<leader>vf", ":DiffviewFileHistory %<cr>", opts)
 keymap("n", "<leader>va", ":DiffviewFileHistory<cr>", opts)
 keymap("n", "<leader>vo", ":DiffviewOpen<cr>", opts)

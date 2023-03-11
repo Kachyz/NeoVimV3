@@ -1,10 +1,18 @@
-local status_ok, telescope = pcall(require, "telescope")
-if not status_ok then
-  return
-end
-
-telescope.setup {
-    defaults = {
+return {
+  'nvim-telescope/telescope.nvim',
+  keys = {
+    {'<leader>p', ':Telescope find_files<cr>', desc = 'Find files'}, -- Find a file by name
+    {'<leader>gp', ':Telescope live_grep<cr>', desc = 'GREP'}, -- ripgrep - find text inside files
+    {'<leader>b', ':Telescope buffers<cr>', desc = 'Find buffer'}, -- List open buffers
+    {'<leader>gl', ':Telescope git_commits<cr>', desc = 'Git Commits' }, -- git log
+    {'<leader>gg', ':Telescope git_status<cr>', desc = 'Git Status' }, -- git status
+    {'<leader>gf', ':Telescope git_bcommits<cr>', desc = 'Git buffer commits'}, -- git blame current file
+    {'<leader>ksw', ':Telescope grep_string<cr>', desc = 'Find word'}, -- search word under cursos
+  },
+  config = function()
+    local telescope = require('telescope')
+    telescope.setup({
+      defaults = {
         layout_config = {
           width = 0.75,
           prompt_position = "top",
@@ -34,6 +42,7 @@ telescope.setup {
         grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
         qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
         buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
-    },
+      },
+    })
+  end
 }
-
