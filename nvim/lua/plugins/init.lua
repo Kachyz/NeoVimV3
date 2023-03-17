@@ -46,13 +46,15 @@ return {
   "lewis6991/gitsigns.nvim",
 
   -- Colors
-  { 'norcalli/nvim-colorizer.lua', config = {'*'} },
+  { 'norcalli/nvim-colorizer.lua', config = {'*'} }, --config = true (another way to run it after load it)
 
   -- Vertical lines
   "lukas-reineke/indent-blankline.nvim",
 
   -- Prettier
   {"prettier/vim-prettier", build = "yarn install --frozen-lockfile --production"},
+  -- Stylua for Lua formatting
+  { 'wesleimp/stylua.nvim' },
 
   -- VIM packages, need to find a Lua option
   -- Welcome screen * check a lua option
