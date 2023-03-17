@@ -71,10 +71,4 @@ return {
 
   -- Diff view
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
-
-  -- Debugger
-  'mfussenegger/nvim-dap',
-  'nvim-telescope/telescope-dap.nvim',
-  'rcarriga/nvim-dap-ui',
-  'theHamsta/nvim-dap-virtual-text',
 }

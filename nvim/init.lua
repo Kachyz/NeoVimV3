@@ -11,7 +11,6 @@ require "user.lualine"
 require "user.indentline"
 require "user.snippets"
 require "user.rest"
-require "user.dap"
 require "user.formatter"
 require "user.diffview"
 
