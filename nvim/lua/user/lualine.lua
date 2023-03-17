@@ -52,8 +52,8 @@ local branch = {
 
 require('lualine').setup {
   options = {
-    -- theme = bubbles_theme,
-    theme = "nightfox",
+    --[[ theme = bubbles_theme, ]]
+    --[[ theme = "nightfox", ]]
     icons_enabled = true,
     component_separators = '|',
     section_separators = { left = '', right = '' },

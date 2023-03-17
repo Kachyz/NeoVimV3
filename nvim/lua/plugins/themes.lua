@@ -84,7 +84,13 @@ return {
           -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         },
         color_overrides = {},
-        highlight_overrides = {},
+        highlight_overrides = {
+          all = function(colors)
+              return {
+                  LineNr = { fg = colors.mauve },
+              }
+          end,
+        },
       })
       vim.cmd([[colorscheme catppuccin]])
     end
