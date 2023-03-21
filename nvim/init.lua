@@ -2,7 +2,7 @@ require "user.options"
 require "user.keymaps"
 require "user.keymapsCoding"
 require "user.plugins" -- Loads lazy
-require "user.lsp"
+require "user.lsp-zero"
 require "user.cmp"
 require "user.autopairs"
 require "user.gitsigns"
