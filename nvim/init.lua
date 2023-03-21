@@ -5,14 +5,12 @@ require "user.plugins" -- Loads lazy
 require "user.lsp-zero"
 require "user.cmp"
 require "user.autopairs"
-require "user.gitsigns"
 require "user.bufferline"
 require "user.lualine"
 require "user.indentline"
 require "user.snippets"
 require "user.rest"
 require "user.formatter"
-require "user.diffview"
 
 -- Vim scripts
 vim.cmd('source $HOME/.config/nvim/vim/start-screen.vim')

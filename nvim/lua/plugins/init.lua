@@ -42,9 +42,6 @@ return {
   -- Autopair
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
 
-  -- Git
-  "lewis6991/gitsigns.nvim",
-
   -- Colors
   { 'norcalli/nvim-colorizer.lua', config = {'*'} }, --config = true (another way to run it after load it)
 
@@ -68,7 +65,4 @@ return {
 
   -- Rest client
   { "NTBBloodbath/rest.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
-
-  -- Diff view
-  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
 }
