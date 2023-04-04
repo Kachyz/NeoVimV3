@@ -2,10 +2,10 @@ return {
   "nvim-lua/popup.nvim", -- An implementation of the Popup API from vim in Neovim
   "nvim-lua/plenary.nvim", -- Useful lua functions used ny lots of plugins
   "kyazdani42/nvim-web-devicons", -- dev icons <3
-  'ryanoasis/vim-devicons',
+  "ryanoasis/vim-devicons",
 
   "p00f/nvim-ts-rainbow", -- rainbow bracket pairs
-  'JoosepAlviste/nvim-ts-context-commentstring',
+  "JoosepAlviste/nvim-ts-context-commentstring",
 
   -- Bufferline & Lualine
   "akinsho/bufferline.nvim",
@@ -14,26 +14,26 @@ return {
   "hrsh7th/cmp-cmdline", -- cmdline completions
 
   {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v1.x',
-	  dependencies = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
+    "VonHeikemen/lsp-zero.nvim",
+    branch = "v1.x",
+    dependencies = {
+      -- LSP Support
+      { "neovim/nvim-lspconfig" },
+      { "williamboman/mason.nvim" },
+      { "williamboman/mason-lspconfig.nvim" },
 
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-buffer'},
-		  {'hrsh7th/cmp-path'},
-		  {'saadparwaiz1/cmp_luasnip'},
-		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'hrsh7th/cmp-nvim-lua'},
+      -- Autocompletion
+      { "hrsh7th/nvim-cmp" },
+      { "hrsh7th/cmp-buffer" },
+      { "hrsh7th/cmp-path" },
+      { "saadparwaiz1/cmp_luasnip" },
+      { "hrsh7th/cmp-nvim-lsp" },
+      { "hrsh7th/cmp-nvim-lua" },
 
-		  -- Snippets
-		  {'L3MON4D3/LuaSnip'},
-		  {'rafamadriz/friendly-snippets'},
-	  }
+      -- Snippets
+      { "L3MON4D3/LuaSnip" },
+      { "rafamadriz/friendly-snippets" },
+    },
   },
 
   "jose-elias-alvarez/null-ls.nvim",
@@ -43,15 +43,15 @@ return {
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
 
   -- Colors
-  { 'norcalli/nvim-colorizer.lua', config = {'*'} }, --config = true (another way to run it after load it)
+  { "norcalli/nvim-colorizer.lua", config = { "*" } }, --config = true (another way to run it after load it)
 
   -- Vertical lines
   "lukas-reineke/indent-blankline.nvim",
 
   -- Prettier
-  {"prettier/vim-prettier", build = "yarn install --frozen-lockfile --production"},
+  { "prettier/vim-prettier", build = "yarn install --frozen-lockfile --production" },
   -- Stylua for Lua formatting
-  { 'wesleimp/stylua.nvim' },
+  { "wesleimp/stylua.nvim" },
 
   -- VIM packages, need to find a Lua option
   -- Welcome screen * check a lua option
