@@ -57,9 +57,6 @@ return {
   -- Welcome screen * check a lua option
   "mhinz/vim-startify",
 
-  -- Surround
-  "tpope/vim-surround",
-
   -- <3 Emmet
   "mattn/emmet-vim",
 

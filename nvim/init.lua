@@ -14,6 +14,5 @@ require "user.formatter"
 
 -- Vim scripts
 vim.cmd('source $HOME/.config/nvim/vim/start-screen.vim')
-vim.cmd('source $HOME/.config/nvim/vim/surround.vim')
 vim.cmd('source $HOME/.config/nvim/vim/emmet.vim')
 
