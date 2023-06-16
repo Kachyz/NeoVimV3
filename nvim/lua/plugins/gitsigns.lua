@@ -47,16 +47,49 @@ return {
     yadm = {
       enable = false,
     },
-    keymaps = {
-      noremap = true,
-      ["n <leader>hs"] = "<cmd>Gitsigns stage_hunk<CR>",
-      ["n <leader>hu"] = "<cmd>Gitsigns undo_stage_hunk<CR>",
-      ["n <leader>hr"] = "<cmd>Gitsigns reset_hunk<CR>",
-      ["n <leader>hd"] = "<cmd>Gitsigns preview_hunk<CR>",
-      ["n <leader>gj"] = "<cmd>Gitsigns next_hunk<CR>",
-      ["n <leader>gk"] = "<cmd>Gitsigns prev_hunk<CR>",
-      ["n <leader>ga"] = "<cmd>Gitsigns stage_buffer<CR>",
-      ["n <leader>gb"] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',
-    },
+    on_attach = function(bufnr)
+      local gs = package.loaded.gitsigns
+
+      local function map(mode, l, r, opts)
+        opts = opts or {}
+        opts.buffer = bufnr
+        vim.keymap.set(mode, l, r, opts)
+      end
+
+      -- Navigation
+      map("n", "<leader>gj", function()
+        if vim.wo.diff then
+          return "<leader>gj"
+        end
+        vim.schedule(function()
+          gs.next_hunk()
+        end)
+        return "<Ignore>"
+      end, { expr = true })
+
+      map("n", "<leader>gk", function()
+        if vim.wo.diff then
+          return "<leader>gk"
+        end
+        vim.schedule(function()
+          gs.prev_hunk()
+        end)
+        return "<Ignore>"
+      end, { expr = true })
+
+      -- Actions
+      map("n", "<leader>hs", gs.stage_hunk)
+      map("n", "<leader>hr", gs.reset_hunk)
+      map("n", "<leader>ga", gs.stage_buffer)
+      map("n", "<leader>hu", gs.undo_stage_hunk)
+      map("n", "<leader>hd", gs.preview_hunk)
+      map("n", "<leader>gb", function()
+        gs.blame_line({ full = true })
+      end)
+      map("n", "<leader>hD", gs.diffthis)
+
+      -- Text object
+      map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
+    end,
   },
 }
