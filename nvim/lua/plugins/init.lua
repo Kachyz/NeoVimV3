@@ -46,7 +46,8 @@ return {
   { "norcalli/nvim-colorizer.lua", config = { "*" } }, --config = true (another way to run it after load it)
 
   -- Vertical lines
-  "lukas-reineke/indent-blankline.nvim",
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+
 
   -- Prettier
   { "prettier/vim-prettier", build = "yarn install --frozen-lockfile --production" },
