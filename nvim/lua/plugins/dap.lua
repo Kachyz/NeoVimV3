@@ -53,6 +53,7 @@ return {
 					processId = require("dap.utils").pick_process,
 				},
 			}
+			dap.configurations.typescript = dap.configurations.javascript
 			vim.fn.sign_define("DapBreakpoint", { text = "🛑", texthl = "", linehl = "", numhl = "" })
 			vim.fn.sign_define("DapStopped", { text = "👉", texthl = "", linehl = "", numhl = "" })
 		end,
