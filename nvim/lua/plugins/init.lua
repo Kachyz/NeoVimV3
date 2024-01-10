@@ -31,7 +31,10 @@ return {
       { "hrsh7th/cmp-nvim-lua" },
 
       -- Snippets
-      { "L3MON4D3/LuaSnip" },
+      { "L3MON4D3/LuaSnip",
+        version = "v2.*",
+        build = "make install_jsregexp"
+      },
       { "rafamadriz/friendly-snippets" },
     },
   },
