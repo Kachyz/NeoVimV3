@@ -55,6 +55,7 @@ require('lualine').setup {
     --[[ theme = bubbles_theme, ]]
     --[[ theme = "nightfox", ]]
     icons_enabled = true,
+    globalstatus = true,
     component_separators = '|',
     section_separators = { left = '', right = '' },
     disabled_filetypes = { "dashboard", "NvimTree", "Outline" },
