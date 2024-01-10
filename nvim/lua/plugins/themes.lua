@@ -97,8 +97,10 @@ return {
   },
 
 -- OTHERS
-  { 'Julpikar/night-owl.nvim' , lazy = true },
   { 'EdenEast/nightfox.nvim', lazy = true },
   { 'franbach/miramare', lazy = true },
   { 'Mofiqul/dracula.nvim', lazy = true },
+
+-- night-owl
+  { "oxfist/night-owl.nvim", lazy = false, }, -- New version 
 }
