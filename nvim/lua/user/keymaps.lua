@@ -98,3 +98,6 @@ keymap("n", "<leader>ve", ":DiffviewToggleFiles<cr>", opts)
 -- <leader>vb (BASE)
 -- <leader>va (ALL)
 -- ]x & [x (Move accross conflicts)
+
+-- FOLDING --
+keymap("n", "zx", "zf%", opts)
