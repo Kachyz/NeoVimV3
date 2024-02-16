@@ -66,7 +66,7 @@ return {
 	},
 	{
 		"theHamsta/nvim-dap-virtual-text",
-		config = {
+		opts = {
 			virt_text_win_col = 40,
 			highlight_changed_variables = true,
 		},

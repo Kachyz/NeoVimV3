@@ -1,7 +1,7 @@
 return {
  'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
-  config = {
+  opts = {
     ensure_installed = {
       "html", "javascript", "lua", "typescript", "tsx", "css", "json", "http"
     }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages

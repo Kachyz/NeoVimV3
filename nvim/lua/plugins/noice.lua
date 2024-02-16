@@ -2,7 +2,7 @@ return {
   "folke/noice.nvim",
   event = "VeryLazy",
 
-  config = {
+  opts = {
     views = {
       cmdline_popup = {
         position = {

@@ -2,7 +2,7 @@ return {
 -- NIGHTFOX
    {
      'EdenEast/nightfox.nvim',
-     config = {
+     opts = {
       -- fox = "nightfox", -- duskfox is another good option
       options = {
         styles = {
@@ -34,7 +34,7 @@ return {
 -- TOKYONIGHT
   { 'folke/tokyonight.nvim',
     lazy = true,
-    config = {
+    opts = {
       style = 'night',
       styles = {
         functions = { italic = true },

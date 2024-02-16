@@ -1,6 +1,6 @@
 return {
   "alexghergh/nvim-tmux-navigation",
-  config = {
+  opts = {
     disable_when_zoomed = true, -- defaults to false
     keybindings = {
       left = "<C-h>",
