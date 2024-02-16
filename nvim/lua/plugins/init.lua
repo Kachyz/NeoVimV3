@@ -46,7 +46,8 @@ return {
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
 
   -- Colors
-  { "norcalli/nvim-colorizer.lua", config = { "*" } }, --config = true (another way to run it after load it)
+  --[[ { "norcalli/nvim-colorizer.lua", config = { "*" } }, --config = true (another way to run it after load it) ]]
+  "NvChad/nvim-colorizer.lua",
 
   -- Vertical lines
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
