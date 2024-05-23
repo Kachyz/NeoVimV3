@@ -2,9 +2,10 @@ return {
   "nvim-neo-tree/neo-tree.nvim",
   cmd = "Neotree",
   branch = "v2.x",
+  event = "VeryLazy",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "nvim-tree/nvim-web-devicons",
+    --[[ "nvim-tree/nvim-web-devicons", ]]
     "MunifTanjim/nui.nvim",
   },
   keys = {

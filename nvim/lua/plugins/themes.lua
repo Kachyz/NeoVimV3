@@ -78,7 +78,7 @@ return {
         integrations = {
           treesitter = true,
           cmp = true,
-          gitsigns = false,
+          gitsigns = true,
           telescope = true,
           nvimtree = true,
           -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
@@ -94,6 +94,12 @@ return {
       })
       vim.cmd([[colorscheme catppuccin]])
     end
+  },
+-- eldritch
+  {
+    "eldritch-theme/eldritch.nvim",
+    lazy = false,
+    opts = {},
   },
 
 -- OTHERS

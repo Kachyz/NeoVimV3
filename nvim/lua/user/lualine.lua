@@ -89,6 +89,8 @@ local diagnostics = {
 
 
 -------------------------
+require 'colorizer'.setup()
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -101,7 +103,7 @@ require('lualine').setup {
     },
     ignore_focus = {},
     always_divide_middle = true,
-    --[[ globalstatus = true, ]]
+    -- [[ globalstatus = true, ]]
     refresh = {
       statusline = 1000,
       tabline = 1000,
@@ -109,7 +111,9 @@ require('lualine').setup {
     }
   },
   sections = {
-    lualine_a = {'mode'},
+    -- lualine_a = {'mode'},
+    lualine_a = { { 'mode', fmt = function(str) return str:sub(1,1) end } },
+
     --[[ lualine_b = {'branch', 'diff', 'diagnostics'}, ]]
     lualine_b = {'branch'},
     lualine_c = {'filename'},
