@@ -62,5 +62,5 @@ return {
   "mattn/emmet-vim",
 
   -- Rest client
-  { "NTBBloodbath/rest.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+  -- { "NTBBloodbath/rest.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 }

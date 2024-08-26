@@ -9,7 +9,7 @@ require "user.bufferline"
 require "user.lualine"
 require "user.indentline"
 require "user.snippets"
-require "user.rest"
+-- require "user.rest"
 require "user.formatter"
 
 -- Vim scripts

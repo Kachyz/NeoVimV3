@@ -56,11 +56,12 @@ vim.diagnostic.config({
     },
 })
 
-local navbuddy = require("nvim-navbuddy")
-
-require("lspconfig").clangd.setup {
-    on_attach = function(client, bufnr)
-        navbuddy.attach(client, bufnr)
-    end
-}
+-- Kachyz - this package needs to be addressed
+-- local navbuddy = require("nvim-navbuddy")
+--
+-- require("lspconfig").clangd.setup {
+--     on_attach = function(client, bufnr)
+--         navbuddy.attach(client, bufnr)
+--     end
+-- }
 
