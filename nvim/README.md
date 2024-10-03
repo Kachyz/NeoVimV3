@@ -16,7 +16,7 @@ currently using
     * html
     * jsonls
     * sumneko_lua
-    * tsserver
+    * ts_ls
   
 
 ## Update NeoVim
