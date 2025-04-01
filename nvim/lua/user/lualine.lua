@@ -119,8 +119,8 @@ require('lualine').setup {
     lualine_c = {'filename'},
     lualine_x = {'filetype'},
     lualine_y = {'diff', 'diagnostics'},
-    --[[ lualine_z = {'location'} ]]
-    lualine_z = {}
+    lualine_z = {'location'}
+    --[[ lualine_z = {} ]]
   },
   inactive_sections = {
     lualine_a = {},
